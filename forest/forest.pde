@@ -5,10 +5,10 @@ float ry = 0;
 void setup() {
   size(400, 400);
   noLoop();
-  background(#40CAFF);
 }
 void draw() {
   //draw ground
+  background(#40CAFF);
   fill(#865110);
   rect(0, 200, 400, 200);
   //for loop. y is the y coordinate of the tree, which increases by a random amount ever loop. the loop starts drawing trees at the top of the ground and stops when it gets to the bottom. the x coordinate of the tree is random every time.
@@ -29,4 +29,7 @@ void draw() {
     fill (#7E4609);
     rect (50+rx, 250+y, 20, 50);
   }
+}
+void mousePressed(){
+ redraw(); 
 }
